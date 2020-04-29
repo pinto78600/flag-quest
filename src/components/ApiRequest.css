@@ -1,0 +1,29 @@
+.ApiRequestBlock1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ApiRequestImg{
+    width: 500px;
+    height: 333px;
+    margin: auto;
+    object-fit:  scale-down;
+    padding: 20px;
+    border: solid 2px lightskyblue;
+}
+
+.ApiRequestBtn{
+    padding: 20px; 
+    background: url(./exchanging.svg);
+    width: 128px;
+    height: 128px;
+    border: none;
+    outline-style:none;
+    background-size: 80px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}

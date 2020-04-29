@@ -3,6 +3,8 @@ import React from 'react'
 import axios from 'axios'
 import { render } from '@testing-library/react'
 
+import './ApiRequest.css'
+
 class ApiRequest extends React.Component {
      state = {
         flag : ''
@@ -27,9 +29,9 @@ class ApiRequest extends React.Component {
 
     render() {
         return( 
-        <div>
-        <button onClick={this.getFlag}>click</button>
-        <img src={this.state.flag.flag}/>
+        <div className="ApiRequestBlock1">
+        <img className="ApiRequestImg" src={this.state.flag.flag}/>
+        <button className="ApiRequestBtn" onClick={this.getFlag}></button>
         </div>
         )
         
