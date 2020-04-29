@@ -58,7 +58,7 @@ class ApiRequest extends React.Component {
                     <div className="modalBody">
                         <h3>Congratulations! </h3>
                         <p>This is {this.state.country.name} flag</p>
-                        <p> Did you know thw capital is {this.state.country.capital}?</p>
+                        <p> Did you know the capital is {this.state.country.capital}?</p>
                         <p> And did you know there they speak {this.state.languages}?</p> 
                     </div>
                     <button className="modalBtn-closeModal" onClick={this.closeAndNewFlag}>Close</button>
