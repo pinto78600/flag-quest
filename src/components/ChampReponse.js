@@ -2,24 +2,21 @@ import React from 'react';
 import './ChampReponse.css'
 
 
-class ChampReponse extends React.Component {
-
-
-    render() {
-        return (
+const ChampReponse = props => {
+    return (
 
             <div className="Reponse">
                 <p>WHICH COUNTRY FLAG IS THIS ?</p>
                 <input
                     className="ChampReponse"
                     type="text"
-                    value=""
+                    name="reponse"
                     placeholder=""
-                    onChange=""
+                    onChange={props.handleChange}
                 />
             </div>
         )
     }
-}
+
 
 export default ChampReponse;

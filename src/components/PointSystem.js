@@ -1,39 +1,15 @@
-class PointSystem extends React.Component{
-    state={
-    count : 0 ,
-   
-            
-}
-validateAndChange = () => {
- this.setState(this.handleChange )
- this.setState(this.props.nextSong)
-  
-}            
-handleChange  = () =>  {
+import React from 'react'
+import './PointSystem.css'
 
-        let artistName = this.props.artistTrack.artistName;
-        let reponse = artistName.toUpperCase();
-        let soluce = reponse.replace(/\s+/g, '')
-        
-    if(soluce === this.props.solution){
-        this.setState({count : this.state.count + 1});}
-           
-    }
-render(){
-let {count} = this.state;
-
-
+const PointSystem = props =>{
 
 return(
     <div className="scoreSystem">
-        <p>Your score is {count} points  </p>
-        <button onClick={this.validateAndChange} className="validate_button"><FontAwesomeIcon icon={faCheck} className="validate_icon" /> 
-</button>
-<button onClick={this.props.nextSong} className="next_button"><FontAwesomeIcon icon={faStepForward} className="next_icon" /> 
-</button>
+        <p>Your score is {props.point} points  </p>
+        <button onClick={props.validateReponse} >valider</button>
     </div>
     
 )}
-}
+
 ;
 export default PointSystem

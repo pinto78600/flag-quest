@@ -1,6 +1,6 @@
 import React from 'react';
 import Apirequest from './ApiRequest'
-import ChampReponse from './ChampReponse';
+
 
 
 class Quiz extends React.Component {
@@ -8,7 +8,7 @@ class Quiz extends React.Component {
     return (
       <div>
         <Apirequest />
-        <ChampReponse />
+      
       </div>
     )
   }
