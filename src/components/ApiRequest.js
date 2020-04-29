@@ -4,6 +4,7 @@ import axios from 'axios'
 import { render } from '@testing-library/react'
 import Modal from 'react-modal';
 
+
 import './ApiRequest.css'
 
 class ApiRequest extends React.Component {
@@ -37,7 +38,7 @@ class ApiRequest extends React.Component {
         this.setState({ showModal: false });
     }
 
-    handleCloseAndNewFlag = () =>{
+    closeAndNewFlag = () => {
         this.handleCloseModal()
         this.getFlag()
     }
@@ -60,8 +61,9 @@ class ApiRequest extends React.Component {
                         <p> Did you know thw capital is {this.state.country.capital}?</p>
                         <p> And did you know there they speak {this.state.languages}?</p> 
                     </div>
-                    <button className="modalBtn-closeModal" onClick={this.handleCloseAndNewFlag}>Close</button>
+                    <button className="modalBtn-closeModal" onClick={this.closeAndNewFlag}>Close</button>
                 </Modal>
+
         </div>
         )  
     }
