@@ -7,7 +7,11 @@ import './ApiRequest.css'
 
 class ApiRequest extends React.Component {
      state = {
-        flag : ''
+        flag : '', 
+        name:'',
+        capital: '',
+        region: '',
+        languages: [],
      }
 
     getFlag = () => {
