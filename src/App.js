@@ -1,6 +1,9 @@
 import React from 'react';
-import {browserRouter as Router ,Route , Switch} from 'react-router-dom' 
+import {BrowserRouter as Router ,Route , Switch} from 'react-router-dom' 
+import HomePage from './components/HomePage'
 import Quiz from './components/Quiz' 
+import Score from './components/Score'
+
 
 class App extends React.Component{
 render(){
