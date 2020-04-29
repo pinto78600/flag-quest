@@ -1,15 +1,12 @@
 .Reponse {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 .ChampReponse {
-   
-    border: solid 1px;
-    width: 10%;
-    border-radius: 0.25rem;
- }
+  border: solid 1px;
+  width: 10%;
+  border-radius: 0.25rem;
+}
