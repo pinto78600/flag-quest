@@ -1,6 +1,6 @@
 import React from 'react';
 import {browserRouter as Router ,Route , Switch} from 'react-router-dom' 
- 
+import Quiz from './components/Quiz' 
 
 class App extends React.Component{
 render(){
