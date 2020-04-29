@@ -1,9 +1,14 @@
 import React from 'react';
+import './HomePage.css'
 
 class Home extends React.Component {
     render() {
         return (
-            <div></div>
+            <body>
+                <header>
+                    <h1>Flag Quest</h1>
+                </header>
+            </body>
         )
     }
 }
