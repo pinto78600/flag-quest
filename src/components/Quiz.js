@@ -1,18 +1,16 @@
 import React from 'react';
 import Apirequest from './ApiRequest'
 import Footer from './Footer';
-
-import './Quiz.css'
-
-
+import Header from './Header';
 class Quiz extends React.Component {
   render() {
     return (
-      <div className="Quiz">
-        <Apirequest />
-        <Footer/>
-      </div>
-    )
+        <div className="Quiz">
+          <Header/>
+          <Apirequest />
+          <Footer/>
+        </div>
+      )
   }
 }
 

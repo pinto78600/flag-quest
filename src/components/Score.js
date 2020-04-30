@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import Footer from './Footer';
 import ScoreFinal from './ScoreFinal'
 import './Score.css'
@@ -16,6 +17,7 @@ class Score extends React.Component {
         console.log(this.props.point)
         return (
             <div className="scoreDiv">
+                <Header/>
                 <ScoreFinal point={point} />
                 {this.state.point < 3 ? (
                 <img className="image" src={vomit} /> )
