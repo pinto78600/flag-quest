@@ -81,12 +81,6 @@ class ApiRequest extends React.Component {
                         <h2 className="modalH2">WOW!!!</h2>
                     </div>
                     <div className="modalBody">
-<<<<<<< HEAD
-                        <h3>Congratulations! </h3>
-                        <p>This is {this.state.country.name} flag</p>
-                        <p> Did you know the capital is {this.state.country.capital}?</p>
-                        <p> And did you know there they speak {this.state.languages}?</p> 
-=======
                         <h3 className="modalH3">Congratulations! </h3>
                         <p className="modalP">This is {this.state.country.name} flag</p>
                         <p className="modalP"> Did you know the capital is {this.state.country.capital}?</p>
@@ -109,7 +103,6 @@ class ApiRequest extends React.Component {
                             <button className="modalBtn">Results</button>
                         </NavLink>
                         <button className="modalBtn" onClick={this.closeAndNewFlag}>Close</button>
->>>>>>> dev
                     </div>
                 </Modal>
 
