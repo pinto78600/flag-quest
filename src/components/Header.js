@@ -2,16 +2,21 @@ import React from 'react';
 
 
 import './Header.css'
+import { NavLink } from 'react-router-dom';
 
 
 class Header extends React.Component {
   render() {
     return (
-      <header>
-        <div className="header-box">
-          <div className="content-One">Accueil</div>
-          <div className="content-One">Forum</div>
-          <div className="content-One">Contact</div>
+       <header className="headerHeader">
+        <div className="headerBox">
+          <NavLink to={{pathname: './'}}><div className="contentOne">Home</div></NavLink>
+          <NavLink to={{ pathname: '/quiz'}}>
+          <div className="contentOne">Quiz</div>
+          </NavLink>
+          <NavLink to={{ pathname: '/score'}}>
+          <div className="contentOne">Scores</div>
+          </NavLink>
         </div>
 
       </header>
@@ -20,3 +25,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+
