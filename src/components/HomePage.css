@@ -1,21 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .Home {
-    height:1000px;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-image:linear-gradient(to top, #09203f 0%, #537895 100%);
 
 }
 
 h1 {
- display: flex;
- justify-content: center;
- font-family: 'Audiowide', cursive;
- font-size: 7rem;
- color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 7rem;
+  color: white;
+}
+
+.Background {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
 }
