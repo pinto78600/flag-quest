@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import Footer from './Footer';
 import ScoreFinal from './ScoreFinal'
 import './Score.css'
@@ -15,6 +16,9 @@ class Score extends React.Component {
         const point = this.props.location.score
         console.log(this.props.point)
         return (
+                <div>
+                    <Header/>
+                               
             <div className="scoreDiv">
                 <ScoreFinal point={point} />
                 {this.state.point < 3 ? (
@@ -22,6 +26,7 @@ class Score extends React.Component {
                  : this.state.point <=4 && this.state.point>=3 ? ( <img className="image" src={emoji} /> ) : this.state.point >=5 ? ( <img className="image" src={emotion} /> ) : null } 
                 <Footer/>
             </div>
+            </div> 
         )
     }
 }

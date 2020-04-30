@@ -7,7 +7,7 @@ class HomePage extends React.Component {
     render() {
         return (
             <div className="Home">
-                <header>
+                <header className="Nav">
                     <h1 className="homeH1">Flag Quest</h1>
                     <h2 className="homeH2">Welcome to this extraordinary flag knowledge quiz !</h2>
                 </header>
