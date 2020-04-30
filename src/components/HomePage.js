@@ -1,17 +1,39 @@
 import React from 'react';
 import './HomePage.css'
 
-class Home extends React.Component {
+class HomePage extends React.Component {
     render() {
         return (
-            <body>
+            <div className="Home">
                 <header>
                     <h1>Flag Quest</h1>
                 </header>
-            </body>
+            </div>
         )
     }
 }
 
 
-export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default HomePage;
