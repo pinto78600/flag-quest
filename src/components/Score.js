@@ -9,26 +9,17 @@ import emoji from './emoji.svg'
 class Score extends React.Component {
     state={
         point : this.props.location.score,
-        iamge: ''
-    }
-
-    showImage=()=>{
-        if (this.state.point >5) {
-            this.setState({image:{emotion}})
-        } else if (this.state.point >= 4 && this.state.point <= 5){
-            this.setState({image:{emoji}})
-        } else {
-            this.setState({image:{vomit}})
-        } 
     }
    
     render() {
         const point = this.props.location.score
         console.log(this.props.point)
         return (
-            <div>
-                <img src={this.state.showImage}/>
+            <div className="scoreDiv">
                 <ScoreFinal point={point} />
+                {this.state.point < 3 ? (
+                <img className="image" src={vomit} /> )
+                 : this.state.point <=4 && this.state.point>=3 ? ( <img className="image" src={emoji} /> ) : this.state.point >=5 ? ( <img className="image" src={emotion} /> ) : null } 
                 <Footer/>
             </div>
         )
