@@ -1,12 +1,12 @@
 import React from 'react'
+import Modal from 'react-modal';
 import { NavLink } from 'react-router-dom'
 import axios from 'axios'
-import Modal from 'react-modal';
-import ChampReponse from './ChampReponse';
 
+import ChampReponse from './ChampReponse';
+import PointSystem from './PointSystem';
 
 import './ApiRequest.css'
-import PointSystem from './PointSystem';
 import './ChampReponse.css'
 
 class ApiRequest extends React.Component {
