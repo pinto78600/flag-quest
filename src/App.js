@@ -1,14 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Footer from './components/Footer';
+import {BrowserRouter as Router ,Route , Switch, Link} from 'react-router-dom'
+import HomePage from './components/HomePage'
+import Quiz from './components/Quiz' 
+import Score from './components/Score'
 
-function App() {
-  return (
-    <div className="App">
-      <Footer />
-    </div>
-  );
+ 
+
+class App extends React.Component{
+render(){
+  return(
+    <Router>
+      <Link to="/quiz"> Quiz</Link>
+      <Switch>
+        <Route exact path="/" component={HomePage}/>
+        <Route path="/quiz" component={Quiz}/>
+        <Route path='/score' component={Score}/>
+      </Switch>
+    </Router>
+  )
+}
 }
 
 export default App;
