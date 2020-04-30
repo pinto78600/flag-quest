@@ -5,6 +5,7 @@ import { render } from '@testing-library/react'
 import Modal from 'react-modal';
 import ChampReponse from './ChampReponse';
 
+
 import './ApiRequest.css'
 import PointSystem from './PointSystem';
 import './ChampReponse.css'
@@ -69,7 +70,7 @@ class ApiRequest extends React.Component {
         this.setState({ showModallose: false });
     }
 
-    handleCloseAndNewFlag = () =>{
+    closeAndNewFlag = () => {
         this.handleCloseModal()
         this.getFlag()
     }
@@ -108,9 +109,11 @@ class ApiRequest extends React.Component {
                         <p> Did you know the capital is {this.state.country.capital}?</p>
                         <p> And did you know there they speak {this.state.languages}?</p> 
                     </div>
-                    <button className="modalBtn-closeModal" onClick={this.handleCloseAndNewFlag}>Close</button>
+                    
                     <NavLink to={{pathname:'/score',score:this.state.point}} ><button>Resultat</button></NavLink>
+                    <button className="modalBtn-closeModal" onClick={this.closeAndNewFlag}>Close</button>
                 </Modal>
+
         </div>
         )  
     }

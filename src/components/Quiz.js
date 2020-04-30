@@ -1,12 +1,13 @@
 import React from 'react';
 import Apirequest from './ApiRequest'
 
+import './Quiz.css'
 
 
 class Quiz extends React.Component {
   render() {
     return (
-      <div>
+      <div className="Quiz">
         <Apirequest />
       
       </div>
