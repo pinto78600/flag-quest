@@ -1,9 +1,12 @@
 import React from 'react';
+import StartButton from "./StartButton.js"
 
 class Home extends React.Component {
     render() {
         return (
-            <div></div>
+            <div>
+                <StartButton/>
+            </div>
         )
     }
 }
