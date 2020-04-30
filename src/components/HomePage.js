@@ -1,11 +1,16 @@
 import React from 'react';
+<<<<<<< HEAD
 import './HomePage.css'
 import Map from '../images/map.png'
 
 class HomePage extends React.Component {
+=======
+import StartButton from "./StartButton.js"
+>>>>>>> dev
 
     render() {
         return (
+<<<<<<< HEAD
             <div className="Home">
                 <header>
                     <h1>Flag Quest</h1>
@@ -14,6 +19,10 @@ class HomePage extends React.Component {
                 <div>
                     <img src={Map} alt="World map" className="Background" />
                 </div>
+=======
+            <div>
+                <StartButton/>
+>>>>>>> dev
             </div>
         )
     }

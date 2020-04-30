@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
     font-family: 'Manrope', sans-serif;
 }
 
@@ -15,18 +14,17 @@
     margin: auto;
     object-fit:  scale-down;
     padding: 20px;
-    /* border: solid 2px lightskyblue; */
 }
 
 .ApiRequestBtn{
     
     padding: 20px; 
     background: url(./exchanging.svg);
-    width: 128px;
-    height: 128px;
+    width: 80px;
+    height: 80px;
     border: none;
     outline-style:none;
-    background-size: 80px;
+    background-size: 60px;
     background-repeat:no-repeat;
     background-position: center;
     background-color: white;
@@ -36,10 +34,10 @@
 
 .modal {
     position: absolute;
-    top: 150px;
-    left: 250px;
-    right: 250px;
-    bottom: 150px;
+    top: 20px;
+    left: 60px;
+    right: 60px;
+    bottom: 20px;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
   }
 
@@ -60,61 +58,230 @@
     font-family: 'Manrope', sans-serif;
 } 
 
-.modalBtn-closeModal {
+.modalBtns{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.modalBtn{
     width: 140px;
     height: 50px;
     background-color:#537895;
     border-radius: 5px;
     border: none;
-    display: flex;
-    margin: auto;
-    justify-content: center;
     text-align: center;
     font-size: 28px;
     color: white; 
     font-family: 'Manrope', sans-serif;
 }
 
-.toBeDelated{
-    width: 200px;
-    height: 150px;
-    background-color: #537895;
+.modalBtnB{
+    width: auto;
+    height: auto;
+    background-color:#537895;
     border-radius: 5px;
     border: none;
+    text-align: center;
+    font-size: 28px;
+    color: white; 
+    font-family: 'Manrope', sans-serif;
     display: flex;
     margin: auto;
-    justify-content: center;
     text-align: center;
-    font-size: 20px;
-    color: white; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Manrope', sans-serif;
 }
 
 
-@media only screen and (max-width:700px) { 
+@media only screen and (min-width:500px and max-width:1200px) { 
     .ApiRequestImg{
         width: 280px;
         height: 287px;
         margin: auto;
         object-fit:  scale-down;
         padding: 10px;
-        border: solid 2px lightskyblue;
     }
 
     .ApiRequestBtn{
         padding: 20px; 
         background: url(./exchanging.svg);
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         border: none;
         outline-style:none;
-        background-size: 80px;
+        background-size: 40px;
         background-repeat:no-repeat;
         background-position: center;
         background-color: white;
         border-radius: 50%;
         margin: auto;
+    }
+
+    .modal {
+        position: absolute;
+        top: 220px;
+        left: 250px;
+        right: 250px;
+        bottom: 220px;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
+      }
+
+    .modalH2{
+        font-size: 40px; 
+    }
+
+    .modalH3{
+        font-size: 32px;
+    }
+
+    .modalP{
+        font-size: 20px;
+    }
+
+    
+    .modalHeader{
+        height: 100px;
+        font-size: 32px;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+    }
+    
+    .modalBody{
+        padding: 20px;
+        text-align: center;
+        /* height: 50%; */
+        font-size: 20px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+    } 
+    
+    .modalBtns{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+    
+    .modalBtn{
+        width: 140px;
+        height: 50px;
+        background-color:#537895;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        font-size: 20px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+    }
+    .modalBtnB{
+        width: auto;
+        height: auto;
+        background-color:#537895;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        font-size: 20px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+        margin: auto;
+        text-align: center; 
+    }
+}
+
+@media only screen and (max-width:499px) { 
+    .ApiRequestImg{
+        width: 280px;
+        height: 187px;
+        margin: auto;
+        margin-bottom: 0px;
+        object-fit:  scale-down;
+        padding: 10px;
+    }
+
+    .ApiRequestBtn{
+        padding: 20px; 
+        background: url(./exchanging.svg);
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline-style:none;
+        background-size: 20px;
+        background-repeat:no-repeat;
+        background-position: center;
+        background-color: white;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .modal {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background-image: linear-gradient(to top, #09203f 0%, #537895 100%)
+      }
+
+    .modalH2{
+        font-size: 28px; 
+    }
+
+    .modalH3{
+        font-size: 20px;
+    }
+
+    .modalP{
+        font-size: 18px;
+    }
+
+    
+    .modalHeader{
+        height: 5%;
+        font-size: 28px;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+    }
+    
+    .modalBody{
+        padding: 20px;
+        text-align: center;
+        height: 70%;
+        font-size: 18px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+    } 
+    
+    .modalBtns{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-around;
+    }
+    
+    .modalBtn{
+        width: 80px;
+        height: 40px;
+        background-color:#537895;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .modalBtnB{
+        width: auto;
+         height: auto;
+        background-color:#537895;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        color: white; 
+        font-family: 'Manrope', sans-serif;
+        margin: auto;
+        text-align: center;
     }
 }

@@ -10,7 +10,7 @@ class App extends React.Component{
 render(){
   return(
     <Router>
-      <Link to="/quiz"> Quiz</Link>
+      
       <Switch>
         <Route exact path="/" component={HomePage}/>
         <Route path="/quiz" component={Quiz}/>
