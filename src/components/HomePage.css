@@ -10,7 +10,7 @@
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
-h1 {
+.homeH1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ header {
   align-items: center;
 }
 
-h2 {
+.homeH2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,14 +47,14 @@ h2 {
 
 @media screen and (max-width: 961px) {
 
-h1{
+.homeH1{
   width: 400px;
   height: 100px;
   font-size: 3rem;
   background-image: none;
 }
 
-h2 {
+.homeH2 {
   font-size: 0.9rem;
 }
 

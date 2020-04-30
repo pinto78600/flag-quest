@@ -40,7 +40,8 @@ class ApiRequest extends React.Component {
         if (this.state.translations === this.state.reponse) {
             this.setState({ point: this.state.point + 1 });
             this.handleOpenModalWin()
-        } else {
+        }
+         else {
             this.handleOpenModalLose()
         }
 
