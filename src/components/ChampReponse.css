@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+.Reponse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ChampReponse {
+  width: 400px;
+  border-radius: 0.25rem;
+  height: 40px;
+}
+
+input{
+  font-family: 'Manrope', sans-serif;
+  color:black;
+  font-size: 28px;
+}
+
+.champReponseP{
+  font-family: 'Manrope', sans-serif;
+  color:white;
+  font-size: 28px;
+
+}
+
+
+@media only screen and (min-width:500px and max-width:1200px) { 
+
+.champReponseP{
+  font-family: 'Manrope', sans-serif;
+  color:white;
+  font-size: 20px;
+}
+
+.ChampReponse {
+  width: 160px;
+  height: 40px;
+}
+input{
+  font-size: 20px;
+
+}
+
+}
+
+@media only screen and (max-width:499px) {
+  .champReponseP{
+      font-size: 18px;
+  }
+
+  .ChampReponse {
+    width: 120px;
+    height: 20px;
+  }
+  input{
+    font-size: 18px;
+  }
+
+}

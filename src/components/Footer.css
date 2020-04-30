@@ -1,0 +1,81 @@
+footer {
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;;
+    width: 100%;
+    margin-top: auto;
+    }
+  
+  .logo-world {
+    width: 32vh;
+    margin: 0 auto;
+  }
+  
+  .logo-fb,
+  .logo-twitter,
+  .logo-youtube {
+    width: 40px;
+    transition: 0.5s ease-out;
+  }
+  
+  .logo-fb:hover,
+  .logo-twitter:hover,
+  .logo-youtube:hover {
+    transform: scale(1.50);
+  }
+  
+  .flex-footer hr {
+    height: 135px;
+  }
+  
+  .flex-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-list {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    color: white;
+    margin: 0 auto;
+  }
+  
+  .flex-logoReseau {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .flex-logoReseau img {
+    margin: 0px 5px;
+  }
+  
+  .flex-list a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .flex-list li {
+    list-style-type: none;
+    margin: 20px;
+  }
+  
+  @media screen and (max-width: 840px) {
+    .flex-footer {
+      flex-direction: column;
+    }
+    hr {
+      display: none;
+    }
+    footer {
+      height: 60%;
+    }
+    .flex-logoReseau {
+      margin-bottom: 5%;
+    }
+    .logo-poke {
+      margin-bottom: 3%;
+    }
+  }
+  
