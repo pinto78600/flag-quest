@@ -1,0 +1,12 @@
+.scoreDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin:auto;
+}
