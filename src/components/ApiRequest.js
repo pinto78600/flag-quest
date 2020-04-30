@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom' 
+import {NavLink} from 'react-router-dom' 
 import axios from 'axios'
 import { render } from '@testing-library/react'
 import Modal from 'react-modal';
@@ -75,7 +75,7 @@ class ApiRequest extends React.Component {
     }
     
     render() {
-        
+        console.log(this.state.point)
         return( 
             <div className="ApiRequestBlock1">
         <img className="ApiRequestImg" src={this.state.country.flag}/>
@@ -109,6 +109,7 @@ class ApiRequest extends React.Component {
                         <p> And did you know there they speak {this.state.languages}?</p> 
                     </div>
                     <button className="modalBtn-closeModal" onClick={this.handleCloseAndNewFlag}>Close</button>
+                    <NavLink to={{pathname:'/score',score:this.state.point}} ><button>Resultat</button></NavLink>
                 </Modal>
         </div>
         )  
