@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.scoreFinal{
+    text-align: center;
+    color: white;
+    
+    
+}
+
+.scoreFinalP {
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+}
+
+@media only screen and (min-width:500px and max-width:1200px) { 
+    .scoreFinalP{   
+    font-size: 32px;
+    }
+}
+
+@media only screen and (max-width:499px) { 
+    .scoreFinalP{   
+        font-size: 20px;
+        }
+}
