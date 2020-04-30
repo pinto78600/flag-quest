@@ -1,5 +1,6 @@
 import React from 'react';
 import ScoreFinal from './ScoreFinal'
+import Footer from './Footer';
 
 class Score extends React.Component {
     state={
@@ -12,6 +13,7 @@ class Score extends React.Component {
         return (
             <div>
                 <ScoreFinal point={point} />
+                <Footer/>
             </div>
         )
     }
