@@ -6,7 +6,7 @@ const ChampReponse = props => {
     return (
 
             <div className="Reponse">
-                <p>WHICH COUNTRY FLAG IS THIS ?</p>
+                <p className="champReponseP">WHICH COUNTRY FLAG IS THIS ?</p>
                 <input
                     className="ChampReponse"
                     type="text"

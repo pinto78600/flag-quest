@@ -5,8 +5,8 @@ const PointSystem = props =>{
 
 return(
     <div className="scoreSystem">
-        <p>Your score is {props.point} points  </p>
-        <button onClick={props.validateReponse} >valider</button>
+        <p  >Your score is {props.point} points  </p>
+        <button className="pointSystemBtn" onClick={props.validateReponse}></button>
     </div>
     
 )}
