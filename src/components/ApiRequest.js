@@ -86,7 +86,7 @@ class ApiRequest extends React.Component {
                         <p className="modalP"> Did you know the capital is {this.state.country.capital}?</p>
                         <p className="modalP"> And did you know there they speak {this.state.languages}?</p>
                     </div>
-                    <button className="modalBtn" onClick={this.closeAndNewFlag}>Close</button>
+                    <button className="modalBtnB" onClick={this.closeAndNewFlag}>Close</button>
                 </Modal>
                 <Modal className="modal" isOpen={this.state.showModallose} contentLabel="Minimal Modal Example">
                     <div className="modalHeader">
